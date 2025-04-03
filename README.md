@@ -8,6 +8,7 @@
 <a href="https://www.eml-munich.de/people/serge-belongie">Serge Belongie</a>,
 <a href="https://www.eml-munich.de/people/zeynep-akata">Zeynep Akata</a>
 <br>
+<br>
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2503.xxxx)
 </div>
