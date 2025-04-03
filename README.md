@@ -7,6 +7,7 @@
 <a href="https://www.eml-munich.de/people/quentin-bouniot">Quentin Bouniot</a>,
 <a href="https://www.eml-munich.de/people/serge-belongie">Serge Belongie</a>,
 <a href="https://www.eml-munich.de/people/zeynep-akata">Zeynep Akata</a>
+<br>
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2503.xxxx)
 </div>
