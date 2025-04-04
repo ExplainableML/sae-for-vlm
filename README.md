@@ -10,7 +10,7 @@
 <br>
 <br>
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2503.xxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2504.02821)
 </div>
 
 <h3 align="center">Abstract</h3>
@@ -38,7 +38,7 @@ To be added soon.
 @article{pach2025sparse,
   title={Sparse Autoencoders Learn Monosemantic Features in Vision-Language Models}, 
   author={Mateusz Pach and Shyamgopal Karthik and Quentin Bouniot and Serge Belongie and Zeynep Akata},
-  journal={arXiv preprint arXiv:2504.xxxx},
+  journal={arXiv preprint arXiv:2504.02821},
   year={2025}
 }
 ```
