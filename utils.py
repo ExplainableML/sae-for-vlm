@@ -1,11 +1,9 @@
-# from datasets import get_cc3m
 from torch.utils.data import DataLoader, Subset
 from torchvision.datasets import ImageNet, ImageFolder
 import torch.nn as nn
 from models.clip import Clip
 from models.dino import Dino
 from models.siglip import Siglip
-from PIL import Image
 import os
 from transformers import AutoTokenizer, CLIPTextModelWithProjection
 

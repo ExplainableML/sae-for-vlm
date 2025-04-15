@@ -68,3 +68,8 @@ if __name__ == "__main__":
         print(f"hai_indices.shape(): {hai_indices.shape}")
         np.save(hai_indices_path, hai_indices)
         print(f"Saved HAI indices to: {hai_indices_path}")
+
+        worst_hai_indices_path = os.path.join(args.activations_dir, f"hai_indices_{args.k}_worst")
+        worst_hais = np.array(worst_hais)
+        np.save(worst_hai_indices_path, worst_hais)
+        print(f"Saved worst HAI indices to: {worst_hai_indices_path}")

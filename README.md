@@ -25,14 +25,27 @@ Sparse Autoencoders (SAEs) have recently been shown to enhance interpretability 
 
 ---
 ### Setup
-Install required PIP packages:
+Install required PIP packages.
 ```bash
 pip install -r requirements.txt
 ```
+Download following datasets:
+* ImageNet (https://pytorch.org/vision/main/generated/torchvision.datasets.ImageNet.html)
+* INaturalist 2021 (https://github.com/visipedia/inat_comp/tree/master/2021)
 
-### Scripts to run the code
-To be added soon.
+Export paths to dataset directories. The directories should contain `train/` and `val/` subdirectories.
+```bash
+export IMAGENET_PATH="<path_to_imagenet>"
+export INAT_PATH="<path_to_inaturalist>"
+```
+Code was run using Python version 3.11.10.
+### Running Experiments
+The commands required to reproduce the results is organized into scripts located in the `scripts/` directory:
+* `monosemanticity_score.sh` computes the Monosemanticity Score (MS) for specified SAEs, layers, models, and image encoders.
+* `matryoshka_hierarchy.sh` analyzes the hierarchical structure that emerges in Matryoshka SAEs.
+* `mllm_steering.sh` enables experimentation with steering LLaVA using an SAE built on top of the vision encoder.
 
+We use the implementation of sparse autoencoders available at https://github.com/saprmarks/dictionary_learning.
 ### Citation
 ```bibtex
 @article{pach2025sparse,
