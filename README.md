@@ -40,7 +40,7 @@ export INAT_PATH="<path_to_inaturalist>"
 ```
 Code was run using Python version 3.11.10.
 ### Running Experiments
-The commands required to reproduce the results is organized into scripts located in the `scripts/` directory:
+The commands required to reproduce the results are organized into scripts located in the `scripts/` directory:
 * `monosemanticity_score.sh` computes the Monosemanticity Score (MS) for specified SAEs, layers, models, and image encoders.
 * `matryoshka_hierarchy.sh` analyzes the hierarchical structure that emerges in Matryoshka SAEs.
 * `mllm_steering.sh` enables experimentation with steering LLaVA using an SAE built on top of the vision encoder.
