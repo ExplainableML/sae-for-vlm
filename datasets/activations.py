@@ -28,7 +28,7 @@ class ChunkedActivationsDataset(Dataset):
         # Compute the offsets and cumulative lengths for efficient indexing
         cumulative = 0
         for file in self.files:
-            tensor = torch.load(os.path.join(directory, file))  # Load file temporarily
+            tensor = torch.load(os.path.join(directory, file), weights_only=True)  # Load file temporarily
             length = tensor.size(0)  # Number of samples in the file (K)
             self.file_offsets.append((file, length))
             cumulative += length
@@ -45,7 +45,7 @@ class ChunkedActivationsDataset(Dataset):
         """
         if self._cached_file != file:
             file_path = os.path.join(self.directory, file)
-            tensor = torch.load(file_path)
+            tensor = torch.load(file_path, weights_only=True)
             self._cached_tensor = tensor.to(self.device)  # Move to the specified device
             self._cached_file = file
 
@@ -126,7 +126,7 @@ class ActivationsDataset(Dataset):
         global_row_index = 0
 
         for file in self.files:
-            tensor = torch.load(os.path.join(directory, file)).to(self.device)
+            tensor = torch.load(os.path.join(directory, file), weights_only=True).to(self.device)
             num_rows = tensor.size(0)
 
             # Calculate global indices for the rows in this tensor
